@@ -1,0 +1,59 @@
+.container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+
+.double-range {
+    position: relative;
+
+    width: 250px;
+
+    font-size: 0;
+}
+
+.double-range__line-left,
+.double-range__line-middle,
+.double-range__line-right {
+    display: inline-block;
+    height: 10px;
+}
+
+.double-range__line-middle {
+    width: 250px;
+
+    background-color: #eee;
+}
+
+.double-range__line-left,
+.double-range__line-right {
+    background-color: green;
+}
+
+.double-range__min-btn,
+.double-range__max-btn {
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    width: 10px;
+    height: 24px;
+
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.double-range__max-btn {
+    left: 245px;
+}
+
+.double-range__min-btn:hover,
+.double-range__max-btn:hover {
+    cursor: pointer;
+}
+
+input[data-for="double-range-min"] {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
